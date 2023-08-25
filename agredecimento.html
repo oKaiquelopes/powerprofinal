@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado pelo Contato! | Knob Tecnologia</title>
+    <link rel="stylesheet" href="css/agradecimento.css">
+    <link rel="shortcut icon" href="css/imagens/icons/LOGO-KNOB-TEC_1.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-header">
+                <img src="css/imagens/LOGO_KNOB_TEC.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="http://127.0.0.1:5502/index.html#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="http://127.0.0.1:5502/index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="css/imagens/icons/menu-abertoPreto.png" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="http://127.0.0.1:5502/index.html#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="http://127.0.0.1:5502/index.html#contato" class="nav-link">Contato</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="textos-home">
+                <h1>Obrigado pelo contato!</h1>
+                <p>Volte a navegar:</p>
+                <a href="http://127.0.0.1:5502/index.html">Aqui</a>
+            </div>
+            <div class="imagem-home">
+                <img src="css/imagens/12982910_5124556.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <script>
+        function menuShow() {
+        let menuMobile = document.querySelector('.mobile-menu');
+        if (menuMobile.classList.contains('open')) {
+            menuMobile.classList.remove('open');
+            document.querySelector('.icon').src = "css/imagens/icons/menu-abertoPreto.png";
+        } else {
+            menuMobile.classList.add('open');
+            document.querySelector('.icon').src = "css/imagens/icons/botao-fecharPreto.png";
+        }
+}
+    </script>
+</body>
+</html>
